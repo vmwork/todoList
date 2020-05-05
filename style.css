@@ -1,0 +1,96 @@
+:root {
+  --base-text-color: #212529;
+  --header-bg: #007bff;
+  --header-text-color: #fff;
+  --default-btn-bg: #007bff;
+  --default-btn-text-color: #fff;
+  --default-btn-hover-bg: #0069d9;
+  --default-btn-border-color: #0069d9;
+  --danger-btn-bg: #dc3545;
+  --danger-btn-text-color: #fff;
+  --danger-btn-hover-bg: #bd2130;
+  --danger-btn-border-color: #dc3545;
+  --input-border-color: #ced4da;
+  --input-bg-color: #fff;
+  --input-text-color: #495057;
+  --input-focus-bg-color: #fff;
+  --input-focus-text-color: #495057;
+  --input-focus-border-color: #80bdff;
+  --input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+body {
+  color: #212529;
+  color: var(--base-text-color);
+}
+
+.navbar {
+  background: #007bff !important;
+  background: var(--header-bg) !important;
+}
+
+.header .navbar-brand {
+  color: #fff !important;
+  color: var(--header-text-color) !important;
+}
+
+.btn.btn-primary,
+.btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  color: var(--default-btn-text-color);
+  background-color: #007bff;
+  background-color: var(--default-btn-bg);
+  border-color: #0069d9;
+  border-color: var(--default-btn-border-color);
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: var(--default-btn-focus-box-shadow);
+}
+.btn.btn-primary:hover {
+  color: #fff;
+  color: var(--default-btn-text-color);
+  background-color: #0069d9;
+  background-color: var(--default-btn-hover-bg);
+  border-color: #0069d9;
+  border-color: var(--default-btn-border-color);
+}
+
+.btn.btn-danger,
+.btn-danger:not(:disabled):not(.disabled):active {
+  color: #fff;
+  color: var(--danger-btn-text-color);
+  background-color: #dc3545;
+  background-color: var(--danger-btn-bg);
+  border-color: #dc3545;
+  border-color: var(--danger-btn-border-color);
+}
+
+.btn.btn-danger:hover {
+  color: #fff;
+  color: var(--danger-btn-text-color);
+  background-color: #bd2130;
+  background-color: var(--danger-btn-hover-bg);
+  border-color: #dc3545;
+  border-color: var(--danger-btn-border-color);
+}
+
+.form-control {
+  background: #fff;
+  background: var(--input-bg-color);
+  border-color: #ced4da;
+  border-color: var(--input-border-color);
+  color: #495057;
+  color: var(--input-text-color);
+}
+
+.form-control:focus {
+  color: #495057;
+  color: var(--input-focus-text-color);
+  background-color: #fff;
+  background-color: var(--input-focus-bg-color);
+  border-color: #80bdff;
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: var(--input-focus-box-shadow);
+}
+
